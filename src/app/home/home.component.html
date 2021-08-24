@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="card-header">
+        <h2>Our Employees</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover table-stiped">
+            <thead>
+                <tr>
+                    <th>No:</th>
+                    <th>Sr.No:</th>
+                    <th>Name:</th>
+                    <th>Email:</th>
+                    <th>Address:</th>
+                    <th>Contact:</th>
+                    <th>Gender:</th>
+                    <th>Position:</th>
+                    <th>Unit Number:</th>
+                    <th>Date Started:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of employees; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{emp._id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>{{emp.address}}</td>
+                    <td>{{emp.contact}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.position}}</td>
+                    <td>{{emp.unit_number}}</td>
+                    <td>{{emp.date_started}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

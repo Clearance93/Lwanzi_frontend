@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="card-header">
+        <h2>New Employee</h2>
+    </div>
+    <div class="card-body">
+        <form class="form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="employees.name" id="name" placeholder="Lwanzi Bravo">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="employees.email" placeholder="lwanzobravo@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Home Address</label>
+                <input type="address" class="form-control" id="address" name="address" [(ngModel)]="employees.address" placeholder="1234 new street New section New Place 00000">
+            </div>
+            <div class="mb-3">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="number" class="form-control" id="contact" name="contact" [(ngModel)]="employees.contact" placeholder="0123456789">
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <input type="text" class="form-control" id="gender" name="gender" [(ngModel)]="employees.gender" placeholder="Male">
+            </div>
+            <div class="mb-3">
+                <label for="position" class="form-label">Position</label>
+                <input type="text" class="form-control" id="position" name="position" [(ngModel)]="employees.position" placeholder="Full stack web dev">
+            </div>
+            <div class="mb-3">
+                <label for="Unit_number" class="form-label">Derpartment Number</label>
+                <input type="text" class="form-control" id="Unit_number" name="Unit_number" [(ngModel)]="employees.unit_number" placeholder="6500327488">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date Started to Work</label>
+                <input type="date" class="form-control" id="date" name="date" [(ngModel)]="employees.date_started" placeholder="12/12/12">
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)]="employees.username" placeholder="bravo">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" [(ngModel)]="employees.password" placeholder="*************">
+            </div>
+            <div class="mb-3">
+                <label for="confirm_password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" [(ngModel)]="employees.confirm_password" placeholder="*************">
+            </div>
+        </form>
+        <input type="submit" class="btn btn-success" value="Submit" (click)="Submit()"> &nbsp;
+        <button type="reset" class="btn btn-danger">Clear</button>
+    </div>
+</div>
